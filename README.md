@@ -27,17 +27,32 @@ In order to solve the environment, the agents must reach an average score of 0.5
 ```python
 env = UnityEnvironment(file_name='Reacher.app')
 ```
-### Instructions
-This ample of the project was computed on a MacOS with no GPU Accelearation.
+### Getting Started
+This sample of the project was computed on a MacOS with no GPU Accelearation.
 In order to replicate the environent, follow these steps:
+
+
+Download the environment from one of the links below. You need only select the environment that matches your operating system:
+
+Linux: click here
+Mac OSX: click here
+Windows (32-bit): click here
+Windows (64-bit): click here
+Place the extracted folder in the BananaFeast GitHub repository, in the base directory.
+
+Install the dependancies as stated in the [DRLND repository](https://github.com/udacity/deep-reinforcement-learning#dependencies).
+
+in the console activate your environment created in step 2 and install the seaborn package with:
+
 
 1. Create a new environment with Python 3.6 with Anaconda.
 	```bash
 	conda create --name drlnd python=3.6 
 	activate drlnd
 	```
+2. Install the dependancies as stated in the [DRLND repository](https://github.com/udacity/deep-reinforcement-learning#dependencies)
 
-2. Install the necessary dependencies in the environment with pip and conda:
+3. Install the necessary dependencies in the environment with pip and conda:
 	- __Install Unity ML-Agents__
 	```bash
 	pip install --user mlagents, unityagents
@@ -55,25 +70,19 @@ In order to replicate the environent, follow these steps:
 	```bash
 	pip install tqdm
 	```
-3. Download the `Reacher` environment from one of the links below and select the environment that matches your Windows operating system:
-### Version 1: One (1) Agent
-Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Linux.zip)
+4. Download the `Reacher` environment from one of the links below and select the environment that matches your Windows operating system:
 
-Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher.app.zip
+Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Linux.zip)
 
-Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86.zip)
+Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis.app.zip)
 
-Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/one_agent/Reacher_Windows_x86_64.zip)
-### Version 2: Twenty (20) Agents
-Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)
+Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86.zip)
 
-Mac OSX: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher.app.zip)
+Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P3/Tennis/Tennis_Windows_x86_64.zip)
 
-Windows (32-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86.zip)
-
-Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Windows_x86_64.zip)
- 
-4. Place the file in the uncompressed folder inside the `DRLND_Continuoues_Control/` folder.
 
 ### Train the agent 
-Use the `p2_Continuous_Control.ipynb` in order to train the agent. The weights of the target nets are also saved as checkpoints.
+Use the `tennis.ipynb` in order to train the agent. The weights of the target nets are also saved as checkpoints.
+At the beginning of the notebook you can set the "train" variable to true or false.
+Setting the variable to true will allow you to train the agent with your parameters.
+Setting the variable to false will let you experience a trained agent.
