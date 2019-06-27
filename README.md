@@ -84,5 +84,5 @@ Windows (64-bit): [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/
 ### Train the agent 
 Use the `tennis.ipynb` in order to train the agent. The weights of the target nets are also saved as checkpoints.
 At the beginning of the notebook you can set the "train" variable to true or false.
-Setting the variable to true will allow you to train the agent with your parameters.
-Setting the variable to false will let you experience a trained agent.
+Setting the variable to True will allow you to train the agent with your parameters.
+Setting the variable to False will let you observe a trained agent.
